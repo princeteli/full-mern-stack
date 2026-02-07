@@ -1,0 +1,38 @@
+<!DOCTYPE htmlbill>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip calculato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h1>Tip Calculator</h1></div>
+
+      <div class="bill">
+        <h2>bill amount</h2>
+        <input id="bill" type="number" placeholder="Enter your bill amount" />
+      </div>
+
+      <div class="tip">
+        <h2>tip per</h2>
+        <input
+          id="tip"
+          type="number"
+          placeholder="Enter your tip percentage "
+        />
+      </div>
+
+      <div class="button">
+        <button id="btn">Calculate</button>
+      </div>
+
+      <div class="total">
+        <h1>Total: <span id="total">00</span></h1>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

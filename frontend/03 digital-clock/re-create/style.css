@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.clock {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+#Date {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+#point {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .clock {
+    padding: 15px 25px;
+  }
+  #Date {
+    font-size: 1.2em;
+  }
+  ul li {
+    font-size: 2rem;
+  }
+}
