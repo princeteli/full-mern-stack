@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.marked {
+  position: relative;
+  background: url("https: //i .pining .com/ 564ex /d 9px / 54px / 87px /d 95487ffab 31b 9722b 12eaf 0em 570px;9494.jpg")
+    no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+.masked {
+  position: relative;
+  font-size: 64px; /* optional: adjust as needed */
+  font-weight: bold; /* optional */
+  background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.masked::before,
+.masked::after {
+  content: "macbook pro.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.masked::before {
+  filter: blur(40px);
+  z-index: -2;
+}
+
+.masked::after {
+  filter: blur(20px);
+  z-index: -1;
+}
