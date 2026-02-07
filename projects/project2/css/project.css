@@ -1,0 +1,195 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #222831;
+  color: white;
+  padding-top: 8rem; /* Prevent content hiding under header */
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 9%;
+  background-color: #222831;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #9929EA;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation */
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #9929EA;
+  border-bottom: 3px solid #b74b4b;
+}
+
+/* Project Links Container */
+.links {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.project {
+  background-color: #393E46;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background-color: #4a4e56;
+}
+
+.project label {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00ADB5;
+  margin-bottom: 1rem;
+}
+
+.about-project {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #eeeeee;
+  margin-bottom: 2rem;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #00ADB5;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #008891;
+}
+
+/* Responsive Adjustments */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 6%;
+  }
+
+  .logo {
+    font-size: 2.6rem;
+  }
+
+  nav a {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .links {
+    gap: 2rem;
+  }
+
+  .project {
+    padding: 1.8rem;
+  }
+}
+
+/* Small Devices (phones < 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 1.2rem 5%;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .links {
+    margin: 3rem 1rem;
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .project label {
+    font-size: 1.8rem;
+  }
+
+  .about-project {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .link {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+/* Larger Tablets (900px - 1200px) */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .links {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .project label {
+    font-size: 2.2rem;
+  }
+}

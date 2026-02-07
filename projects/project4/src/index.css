@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white relative font-sans h-screen overflow-x-hidden;
+  }
+}
+
+.change {
+  position: relative;
+}
+.change::before {
+  content: "Web Developer"; /* Starting text */
+  color: whitesmoke;
+  animation: words 20s infinite;
+}
+
+/* Animation for rotating job titles */
+@keyframes words {
+  0%, 20% {
+    content: "Web Developer";
+  }
+  21%, 40% {
+    content: "App Developer";
+  }
+  41%, 60% {
+    content: "Hacker";
+  }
+  61%, 80% {
+    content: "AI/ML";
+  }
+  81%, 100% {
+    content: "Content Creator";
+  }
+}
+
+#A:hover{
+    color: #7f7f7f;
+  border-bottom: 2px solid #b74b4b;
+}

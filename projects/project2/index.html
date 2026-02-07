@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" class="logo">Prince</a>
+
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav>
+        <a href="./index.html" class="active"> Home</a>
+        <a href="./Skills.html">Skills</a>
+        <a href="./Projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-img">
+        <img src="./img/photo.jpg" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hey I'm <span>Prince</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>
+          Hey i'm a <strong> BCA student</strong>. I learned
+          <strong>
+            HTML, CSS, JavaScript, React, Node.js, Express.js, and
+            MongoDB</strong
+          >. Right now, I learning <strong> DevOps</strong>.
+          <span class="id">
+            I also interested in MERN stack, Data Structures & Algorithms,
+            Artificial Intelligence, or Hacking and Cyber Security </span
+          >.
+        </p>
+        <div class="social-icons">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/prince-teli-a95064323/ "
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+
+          <a
+            target="_blank"
+            href="https://www.instagram.com/code__syntax?igsh=eHVwOXo5dm9xY3Zm "
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <a
+          href="./photo.jpg"
+          target="_blank"
+          style="margin-left: 10px; margin-bottom: 10px"
+            download="Prince-Teli-Resume.pdf"
+          class="btn"
+          >Resume</a
+        >
+        <a href="./contact.html" class="btn" style="margin-left: 10px"
+          >Hire me</a
+        >
+      </div>
+    </section>
+
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const nav = document.querySelector("nav");
+
+      menuIcon.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      const navLinks = document.querySelectorAll("nav a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("active"); // menu close kar de
+        });
+      });
+    </script>
+  </body>
+</html>
