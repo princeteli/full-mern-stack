@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main container banaya -->
+    <div class="container"> 
+       <!--1st div for todo list heading  -->
+      <div class="todo-app">
+        <h2>
+          To-Do List By PrinceTeli
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/011/385/199/small_2x/to-do-list-flat-icon-free-vector.jpg"
+            alt=""
+          />
+        </h2>
+
+          <!--2nd div for  user input  -->
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add Your Task" />
+          <!-- button pe onClick function lagaya he  -->
+           <!-- onClick call addTask functin  -->
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- 3rd div for show todo list -->
+        <ul id="list-container">
+          <!-- <li class="checked">task1 </li>
+          <li>task1</li>
+          <li>task1</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

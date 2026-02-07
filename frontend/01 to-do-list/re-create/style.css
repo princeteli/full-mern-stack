@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.todo-app h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.todo-app img {
+  width: 30px;
+  height: 30px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff5e62;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  background: #ff5e62;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background: #e04b50;
+}
+.list-container ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.list-container ul li {
+  background: #f7f7f7;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list-container ul li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.list-container ul li button:hover {
+  background: darkred;
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  input, button {
+    width: 100%;
+  }
+}
+
+.chicked{
+  text-decoration: line-through;
+}
