@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  Geneva, Tahoma, sans-serif;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background: url(HD-wallpaper-anime-boku-no-hero-demon-slayer-dragon-ball-naruto-one-piece.jpg) center center;
+  background-size: cover;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+display: flex;
+align-items: center;
+flex-direction: column;
+color: aliceblue;
+}
+
+h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+h3{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.col{
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.col div{
+  width: 250px;
+
+}
+input{
+  height: 50px;
+  width: 60%;
+  text-align: center;
+  font-size: 30px;
+}

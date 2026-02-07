@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transform: perspective(1000px) rotateX(10deg);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.5);
+}
+
+button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+}
