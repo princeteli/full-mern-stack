@@ -1,0 +1,4 @@
+#priciHeader {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
