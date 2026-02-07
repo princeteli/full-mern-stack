@@ -1,0 +1,86 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background: #121212;
+  color: #ff5252;
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  margin-top: 50px;
+}
+
+#cellcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #1e1e1e;
+  border: 2px solid #ff5252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5252;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #ff5252;
+  color: #121212;
+  transform: scale(1.1);
+}
+
+@keyframes winAnimation {
+  0% { background-color: #ff5252; transform: scale(1.2); }
+  50% { background-color: #ff1744; transform: scale(1); }
+  100% { background-color: #ff5252; transform: scale(1.2); }
+}
+
+.winning-cell {
+  animation: winAnimation 0.5s ease-in-out infinite alternate;
+}
+
+#restart {
+  background-color: #ff5252;
+  color: #121212;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 2px solid #ff5252;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#restart:hover {
+  background-color: #121212;
+  color: #ff5252;
+  border-color: #ff5252;
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#statusText {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ff5252;
+  text-shadow: 2px 2px 5px rgba(255, 82, 82, 0.5);
+}

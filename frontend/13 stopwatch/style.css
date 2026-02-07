@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.525);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.stopwatch {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 24px;
+  border-radius: 5px;
+}
+
+.timerdisplay {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.green{
+  background-color: rgba(0, 255, 0, 0.95);
+}
+.red{
+  background-color: rgba(255, 0, 0, 0.918);
+}
+.blue{
+  background-color: rgba(0, 0, 255, 0.914);
+}
